@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import HomeLayout from "./pages/HomeLayout";
 import WeddingCardScreen from "./pages/WeddingCardScreen";
 import ServiceScreen from "./pages/ServiceScreen";
+import './App.css'
 
 const App = () => {
   return (

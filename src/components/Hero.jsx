@@ -4,11 +4,12 @@ import HeroImage from "../assets/images/hero.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-primary">
-      <div className="app-container">
-        <div className="grid items-center grid-cols-1 gap-8 py-20 pt-32 lg:grid-cols-2">
+    <section className="min-h-screen bg-primary">
+      <div className="flex items-center min-h-screen app-container">
+        <div className="grid items-center w-full grid-cols-1 gap-8 lg:grid-cols-2">
+          
           {/* Left Content */}
-          <div className="z-10 space-y-6">
+          <div className="space-y-6">
             <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
               Designs That Speak.
               <br />
@@ -21,16 +22,14 @@ const Hero = () => {
               materials, we design with precision and print with perfection.
             </p>
 
-            <div className="pt-4">
-              <a href="#services">
-                <Button variant="secondary">Learn More</Button>
-              </a>
-            </div>
+            <a href="#services">
+              <Button variant="secondary" className="mt-8">Learn More</Button>
+            </a>
           </div>
 
-          {/* Right Content - Image with Decorative Elements */}
-          <div className="relative z-10 flex items-center justify-center">
-            <div className="relative w-full max-w-md overflow-hidden rounded-lg aspect-square">
+          {/* Right Image */}
+          <div className="flex justify-center">
+            <div className="w-full max-w-md overflow-hidden rounded-lg aspect-square">
               <img
                 src={HeroImage}
                 alt="Designer portrait"
@@ -38,6 +37,7 @@ const Hero = () => {
               />
             </div>
           </div>
+
         </div>
       </div>
     </section>
