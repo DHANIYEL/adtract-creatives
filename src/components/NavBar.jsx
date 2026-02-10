@@ -8,7 +8,11 @@ const Navbar = () => {
         <div className="py-4 flex-between">
           {/* Logo */}
           <div className="flex-start">
-            <img src="/assets/logo/Adtract-logo.svg" alt="logo" className="w-28 h-28" />
+            <img
+              src="/assets/logo/Adtract-logo.svg"
+              alt="logo"
+              className="w-28 h-28"
+            />
           </div>
 
           {/* Navigation Links */}
@@ -29,15 +33,15 @@ const Navbar = () => {
               href="#contact"
               className="text-white transition-colors duration-200 hover:text-light"
             >
-              Contact Us
+              Contact
             </a>
           </div>
- <Button
-        onClick={() => alert("Primary clicked")}
-        // variant="secondary"
-      >
-        Primary
-      </Button>
+          <Button
+            onClick={() => {}}
+            // variant="secondary"
+          >
+            Wedding Cards
+          </Button>
           {/* CTA Button */}
           {/* <div>
             <button className="px-6 py-2 font-medium transition-all duration-200 bg-white rounded text-primary hover:bg-tertiary">
