@@ -1,7 +1,7 @@
 import React from "react";
 import Contact from "../components/Contact";
 import { Instagram, Twitter, Dribbble, Facebook } from "lucide-react";
-
+import Logo from "/src/assets/logo/Adtract-logo.svg";
 const Footer = () => {
   const footerLinks = [
     { name: "About", href: "#about" },
@@ -70,11 +70,7 @@ const Footer = () => {
               <div className="flex flex-col items-center gap-6 md:hidden">
                 {/* Logo */}
                 <a href="/">
-                  <img
-                    src="/src/assets/logo/Adtract-logo.svg"
-                    alt="logo"
-                    className="w-20 h-20"
-                  />
+                  <img src={Logo} alt="logo" className="w-20 h-20" />
                 </a>
 
                 {/* Links 2x2 Grid */}
