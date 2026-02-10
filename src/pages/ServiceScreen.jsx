@@ -1,6 +1,9 @@
 import { ArrowLeft } from "lucide-react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import CardImg1 from "/src/assets/images/card1.png";
+import CardImg2 from "/src/assets/images/card2.png";
+import CardImg3 from "/src/assets/images/card3.png";
 
 const ServiceScreen = () => {
   const Navigate = useNavigate();
@@ -12,12 +15,12 @@ const ServiceScreen = () => {
         "Consistent branding across logos, stationery, and print materials.",
       images: [
         {
-          src: "/src/assets/images/card1.png",
+          src: CardImg1,
           alt: "Brand materials 1",
           colSpan: "col-span-1",
         },
         {
-          src: "/src/assets/images/card2.png",
+          src: CardImg2,
           alt: "Brand materials 2",
           colSpan: "col-span-1",
         },
@@ -30,22 +33,22 @@ const ServiceScreen = () => {
       description: "Clean, professional card designs with premium finishes.",
       images: [
         {
-          src: "/src/assets/images/card1.png",
+          src: CardImg3,
           alt: "Business card 1",
           colSpan: "col-span-1",
         },
         {
-          src: "/src/assets/images/card2.png",
+          src: CardImg1,
           alt: "Business card 2",
           colSpan: "col-span-1",
         },
         {
-          src: "/src/assets/images/card3.png",
+          src: CardImg2,
           alt: "Business card 3",
           colSpan: "col-span-1",
         },
         {
-          src: "/src/assets/images/card1.png",
+          src: CardImg3,
           alt: "Business card 4",
           colSpan: "col-span-1",
         },
@@ -58,12 +61,12 @@ const ServiceScreen = () => {
       description: "Well-structured layouts designed for clear communication.",
       images: [
         {
-          src: "/src/assets/images/card2.png",
+          src: CardImg1,
           alt: "Brochure 1",
           colSpan: "col-span-1",
         },
         {
-          src: "/src/assets/images/card3.png",
+          src: CardImg2,
           alt: "Brochure 2",
           colSpan: "col-span-1",
         },
@@ -76,17 +79,17 @@ const ServiceScreen = () => {
       description: "Tailored print solutions for unique requirements.",
       images: [
         {
-          src: "/src/assets/images/card1.png",
+          src: CardImg3,
           alt: "Custom print 1",
           colSpan: "col-span-1",
         },
         {
-          src: "/src/assets/images/card2.png",
+          src: CardImg1,
           alt: "Custom print 2",
           colSpan: "col-span-1",
         },
         {
-          src: "/src/assets/images/card3.png",
+          src: CardImg2,
           alt: "Custom print 3",
           colSpan: "col-span-1",
         },
@@ -99,12 +102,12 @@ const ServiceScreen = () => {
       description: "Clean visuals created for digital platforms and campaigns.",
       images: [
         {
-          src: "/src/assets/images/card1.png",
+          src: CardImg3,
           alt: "Digital design 1",
           colSpan: "col-span-1",
         },
         {
-          src: "/src/assets/images/card2.png",
+          src: CardImg1,
           alt: "Digital design 2",
           colSpan: "col-span-1",
         },

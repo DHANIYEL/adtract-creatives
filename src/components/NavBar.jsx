@@ -74,7 +74,7 @@ const Navbar = () => {
         {/* Drawer Header */}
         <div className="flex items-center justify-between p-6 border-b border-white/10">
           <img
-            src="/src/assets/logo/Adtract-logo.svg"
+            src={Logo}
             alt="logo"
             className="w-16 h-16"
           />

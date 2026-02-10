@@ -2,16 +2,19 @@ import React from "react";
 import CustomButton from "../components/CustomButton";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import CardImg1 from "/src/assets/images/card1.png";
+import CardImg2 from "/src/assets/images/card2.png";
+import CardImg3 from "/src/assets/images/card3.png";
 
 const WeddingCardScreen = () => {
   const Navigate = useNavigate();
   const cardImages = [
-    "/src/assets/images/card1.png",
-    "/src/assets/images/card2.png",
-    "/src/assets/images/card3.png",
-    "/src/assets/images/card2.png",
-    "/src/assets/images/card3.png",
-    "/src/assets/images/card1.png",
+    CardImg1,
+    CardImg2,
+    CardImg3,
+    CardImg1,
+    CardImg2,
+    CardImg3,
   ];
 
   return (

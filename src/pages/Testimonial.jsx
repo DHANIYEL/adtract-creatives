@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-
+import React, { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import PersonImg from "/src/assets/images/person.png";
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -10,33 +10,33 @@ const Testimonial = () => {
       text: "Adtract delivered exactly what we imagined—beautiful designs, premium print quality, and on-time delivery. Our wedding cards received endless compliments!",
       name: "Rizwan",
       company: "Matajar Groups",
-      image: "/src/assets/images/person.png"
+      image: PersonImg,
     },
     {
       id: 2,
       text: "Outstanding service and attention to detail. The team at Adtract transformed our brand identity with creative designs that truly represent who we are.",
       name: "Sarah Johnson",
       company: "Tech Innovations",
-      image: "/src/assets/images/person.png"
+      image: PersonImg,
     },
     {
       id: 3,
       text: "Professional, creative, and reliable. Adtract's printing quality is exceptional, and their customer service goes above and beyond expectations.",
       name: "Michael Chen",
       company: "Creative Studios",
-      image: "/src/assets/images/person.png"
-    }
+      image: PersonImg,
+    },
   ];
 
   const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1,
     );
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    setCurrentIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1,
     );
   };
 
@@ -97,9 +97,9 @@ const Testimonial = () => {
                     key={index}
                     onClick={() => setCurrentIndex(index)}
                     className={`h-2 rounded-full transition-all duration-300 ${
-                      index === currentIndex 
-                        ? 'w-8 bg-white' 
-                        : 'w-2 bg-white/40 hover:bg-white/60'
+                      index === currentIndex
+                        ? "w-8 bg-white"
+                        : "w-2 bg-white/40 hover:bg-white/60"
                     }`}
                     aria-label={`Go to testimonial ${index + 1}`}
                   />

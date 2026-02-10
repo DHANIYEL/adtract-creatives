@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./CustomButton";
+import HeroImage from "../assets/images/hero.png";
 
 const Hero = () => {
   return (
@@ -31,7 +32,7 @@ const Hero = () => {
           <div className="relative z-10 flex items-center justify-center">
             <div className="relative w-full max-w-md overflow-hidden rounded-lg aspect-square">
               <img
-                src="/src/assets/images/hero.png"
+                src={HeroImage}
                 alt="Designer portrait"
                 className="object-cover w-full h-full"
               />

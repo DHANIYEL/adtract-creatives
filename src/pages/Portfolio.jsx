@@ -1,23 +1,26 @@
 import React from "react";
 import Button from "../components/CustomButton";
 import { useNavigate } from "react-router-dom";
+import CardImg1 from "/src/assets/images/card1.png";
+import CardImg2 from "/src/assets/images/card2.png";
+import CardImg3 from "/src/assets/images/card3.png";
 
 const Portfolio = () => {
   const Navigate = useNavigate();
   const portfolioItems = [
     {
       id: 1,
-      image: "/src/assets/images/card1.png",
+      image: CardImg1,
       alt: "Wedding Card Design 1",
     },
     {
       id: 2,
-      image: "/src/assets/images/card2.png",
+      image: CardImg2,
       alt: "Wedding Card Design 2",
     },
     {
       id: 3,
-      image: "/src/assets/images/card3.png",
+      image: CardImg3,
       alt: "Wedding Card Design 3",
     },
   ];
