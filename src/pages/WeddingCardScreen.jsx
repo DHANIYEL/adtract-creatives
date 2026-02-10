@@ -6,12 +6,12 @@ import { ArrowLeft } from "lucide-react";
 const WeddingCardScreen = () => {
   const Navigate = useNavigate();
   const cardImages = [
-    "/assets/images/card1.png",
-    "/assets/images/card2.png",
-    "/assets/images/card3.png",
-    "/assets/images/card2.png",
-    "/assets/images/card3.png",
-    "/assets/images/card1.png",
+    "../assets/images/card1.png",
+    "../assets/images/card2.png",
+    "../assets/images/card3.png",
+    "../assets/images/card2.png",
+    "../assets/images/card3.png",
+    "../assets/images/card1.png",
   ];
 
   return (

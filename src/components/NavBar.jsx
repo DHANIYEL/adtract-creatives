@@ -22,7 +22,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="/">
             <img
-              src="/assets/logo/Adtract-logo.svg"
+              src="../assets/logo/Adtract-logo.svg"
               alt="logo"
               className="w-16 h-16 cursor-pointer md:w-20 md:h-20"
             />
@@ -73,7 +73,7 @@ const Navbar = () => {
         {/* Drawer Header */}
         <div className="flex items-center justify-between p-6 border-b border-white/10">
           <img
-            src="/assets/logo/Adtract-logo.svg"
+            src="../assets/logo/Adtract-logo.svg"
             alt="logo"
             className="w-16 h-16"
           />

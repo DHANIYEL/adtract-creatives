@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="relative z-10 flex items-center justify-center">
             <div className="relative w-full max-w-md overflow-hidden rounded-lg aspect-square">
               <img
-                src="/assets/images/hero.png"
+                src="../assets/images/hero.png"
                 alt="Designer portrait"
                 className="object-cover w-full h-full"
               />

@@ -2,9 +2,9 @@ import React from "react";
 import ServiceCards from "../components/ServiceCards";
 import { ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import img1 from "/assets/images/image.png";
-import img2 from "/assets/images/image-2.png";
-import img3 from "/assets/images/image-1.png";
+import img1 from "../assets/images/Image.png";
+import img2 from "../assets/images/Image-1.png";
+import img3 from "../assets/images/Image-2.png";
 
 const Service = () => {
   const services = [
