@@ -3,9 +3,9 @@ import Button from "./CustomButton";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-primary">
+    <section className="relative min-h-screen overflow-hidden bg-primary">
       <div className="app-container">
-        <div className="grid items-center grid-cols-1 gap-8 py-20 lg:grid-cols-2">
+        <div className="grid items-center grid-cols-1 gap-8 py-20 pt-32 lg:grid-cols-2">
           {/* Left Content */}
           <div className="z-10 space-y-6">
             <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">

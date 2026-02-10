@@ -24,43 +24,71 @@ const Footer = () => {
       <div className="bg-secondary">
         <div className="py-12 app-container">
           <div className="gap-8 flex-col-center">
-            {/* Navigation Links with Logo in Center */}
-            <div className="grid items-center w-full grid-cols-3">
-              {/* Left Links */}
-              <div className="flex justify-end gap-8">
-                {footerLinks.slice(0, 2).map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.href}
-                    className="text-white transition-colors duration-200 hover:text-light"
-                  >
-                    {link.name}
+            {/* Navigation Links + Center Logo (Responsive) */}
+            <div className="w-full">
+              {/* Desktop / Tablet Layout */}
+              <div className="hidden md:grid items-center grid-cols-[1fr_auto_1fr] gap-16">
+                {/* Left Links */}
+                <div className="flex justify-end gap-8">
+                  {footerLinks.slice(0, 2).map((link, index) => (
+                    <a
+                      key={index}
+                      href={link.href}
+                      className="text-white transition-colors duration-200 hover:text-light"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
+
+                {/* Center Logo */}
+                <div className="flex justify-center">
+                  <a href="/">
+                    <img
+                      src="/assets/logo/Adtract-logo.svg"
+                      alt="logo"
+                      className="w-24 h-24"
+                    />
                   </a>
-                ))}
+                </div>
+
+                {/* Right Links */}
+                <div className="flex justify-start gap-8">
+                  {footerLinks.slice(2, 4).map((link, index) => (
+                    <a
+                      key={index}
+                      href={link.href}
+                      className="text-white transition-colors duration-200 hover:text-light"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
               </div>
 
-              {/* Center Logo */}
-              <div className="flex justify-center">
+              {/* Mobile Layout */}
+              <div className="flex flex-col items-center gap-6 md:hidden">
+                {/* Logo */}
                 <a href="/">
                   <img
                     src="/assets/logo/Adtract-logo.svg"
                     alt="logo"
-                    className="w-24 h-24 cursor-pointer"
+                    className="w-20 h-20"
                   />
                 </a>
-              </div>
 
-              {/* Right Links */}
-              <div className="flex justify-start gap-8">
-                {footerLinks.slice(2, 4).map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.href}
-                    className="text-white transition-colors duration-200 hover:text-light"
-                  >
-                    {link.name}
-                  </a>
-                ))}
+                {/* Links 2x2 Grid */}
+                <div className="grid grid-cols-2 gap-x-10 gap-y-4">
+                  {footerLinks.map((link, index) => (
+                    <a
+                      key={index}
+                      href={link.href}
+                      className="text-center text-white transition-colors duration-200 hover:text-light"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
 

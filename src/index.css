@@ -68,6 +68,9 @@
   .btn-danger {
     @apply text-white bg-red-600 btn hover:bg-red-700 focus:ring-red-500;
   }
+  .nav-link {
+    @apply text-white transition-colors duration-200 hover:text-light;
+  }
 }
 
 /* =========================
