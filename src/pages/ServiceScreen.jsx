@@ -12,12 +12,12 @@ const ServiceScreen = () => {
         "Consistent branding across logos, stationery, and print materials.",
       images: [
         {
-          src: "../assets/images/card1.png",
+          src: "/src/assets/images/card1.png",
           alt: "Brand materials 1",
           colSpan: "col-span-1",
         },
         {
-          src: "../assets/images/card2.png",
+          src: "/src/assets/images/card2.png",
           alt: "Brand materials 2",
           colSpan: "col-span-1",
         },
@@ -30,22 +30,22 @@ const ServiceScreen = () => {
       description: "Clean, professional card designs with premium finishes.",
       images: [
         {
-          src: "../assets/images/card1.png",
+          src: "/src/assets/images/card1.png",
           alt: "Business card 1",
           colSpan: "col-span-1",
         },
         {
-          src: "../assets/images/card2.png",
+          src: "/src/assets/images/card2.png",
           alt: "Business card 2",
           colSpan: "col-span-1",
         },
         {
-          src: "../assets/images/card3.png",
+          src: "/src/assets/images/card3.png",
           alt: "Business card 3",
           colSpan: "col-span-1",
         },
         {
-          src: "../assets/images/card1.png",
+          src: "/src/assets/images/card1.png",
           alt: "Business card 4",
           colSpan: "col-span-1",
         },
@@ -58,12 +58,12 @@ const ServiceScreen = () => {
       description: "Well-structured layouts designed for clear communication.",
       images: [
         {
-          src: "../assets/images/card2.png",
+          src: "/src/assets/images/card2.png",
           alt: "Brochure 1",
           colSpan: "col-span-1",
         },
         {
-          src: "../assets/images/card3.png",
+          src: "/src/assets/images/card3.png",
           alt: "Brochure 2",
           colSpan: "col-span-1",
         },
@@ -76,17 +76,17 @@ const ServiceScreen = () => {
       description: "Tailored print solutions for unique requirements.",
       images: [
         {
-          src: "../assets/images/card1.png",
+          src: "/src/assets/images/card1.png",
           alt: "Custom print 1",
           colSpan: "col-span-1",
         },
         {
-          src: "../assets/images/card2.png",
+          src: "/src/assets/images/card2.png",
           alt: "Custom print 2",
           colSpan: "col-span-1",
         },
         {
-          src: "../assets/images/card3.png",
+          src: "/src/assets/images/card3.png",
           alt: "Custom print 3",
           colSpan: "col-span-1",
         },
@@ -99,12 +99,12 @@ const ServiceScreen = () => {
       description: "Clean visuals created for digital platforms and campaigns.",
       images: [
         {
-          src: "../assets/images/card1.png",
+          src: "/src/assets/images/card1.png",
           alt: "Digital design 1",
           colSpan: "col-span-1",
         },
         {
-          src: "../assets/images/card2.png",
+          src: "/src/assets/images/card2.png",
           alt: "Digital design 2",
           colSpan: "col-span-1",
         },

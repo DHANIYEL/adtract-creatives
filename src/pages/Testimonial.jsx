@@ -10,21 +10,21 @@ const Testimonial = () => {
       text: "Adtract delivered exactly what we imagined—beautiful designs, premium print quality, and on-time delivery. Our wedding cards received endless compliments!",
       name: "Rizwan",
       company: "Matajar Groups",
-      image: "../assets/images/person.png"
+      image: "/src/assets/images/person.png"
     },
     {
       id: 2,
       text: "Outstanding service and attention to detail. The team at Adtract transformed our brand identity with creative designs that truly represent who we are.",
       name: "Sarah Johnson",
       company: "Tech Innovations",
-      image: "../assets/images/person.png"
+      image: "/src/assets/images/person.png"
     },
     {
       id: 3,
       text: "Professional, creative, and reliable. Adtract's printing quality is exceptional, and their customer service goes above and beyond expectations.",
       name: "Michael Chen",
       company: "Creative Studios",
-      image: "../assets/images/person.png"
+      image: "/src/assets/images/person.png"
     }
   ];
 

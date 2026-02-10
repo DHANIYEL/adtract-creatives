@@ -45,7 +45,7 @@ const Footer = () => {
                 <div className="flex justify-center">
                   <a href="/">
                     <img
-                      src="../assets/logo/Adtract-logo.svg"
+                      src="/src/assets/logo/Adtract-logo.svg"
                       alt="logo"
                       className="w-24 h-24"
                     />
@@ -71,7 +71,7 @@ const Footer = () => {
                 {/* Logo */}
                 <a href="/">
                   <img
-                    src="../assets/logo/Adtract-logo.svg"
+                    src="/src/assets/logo/Adtract-logo.svg"
                     alt="logo"
                     className="w-20 h-20"
                   />

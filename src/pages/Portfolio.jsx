@@ -7,17 +7,17 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      image: "../assets/images/card1.png",
+      image: "/src/assets/images/card1.png",
       alt: "Wedding Card Design 1",
     },
     {
       id: 2,
-      image: "../assets/images/card2.png",
+      image: "/src/assets/images/card2.png",
       alt: "Wedding Card Design 2",
     },
     {
       id: 3,
-      image: "../assets/images/card3.png",
+      image: "/src/assets/images/card3.png",
       alt: "Wedding Card Design 3",
     },
   ];
