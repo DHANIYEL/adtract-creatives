@@ -38,32 +38,32 @@ const Contact = () => {
     {
       icon: MapPin,
       text: '1234 Design Street, Creativeville, Webland, Imaginary State, 98765',
-      link: '#'
+      link: ' '
     }
   ];
 
-  const socialLinks = [
-    {
-      icon: Twitter,
-      link: '#',
-      label: 'Twitter'
-    },
-    {
-      icon: Instagram,
-      link: '#',
-      label: 'Instagram'
-    },
-    {
-      icon: Dribbble,
-      link: '#',
-      label: 'Dribbble'
-    },
-    {
-      icon: Facebook,
-      link: '#',
-      label: 'Facebook'
-    }
-  ];
+  // const socialLinks = [
+  //   {
+  //     icon: Twitter,
+  //     link: '#',
+  //     label: 'Twitter'
+  //   },
+  //   {
+  //     icon: Instagram,
+  //     link: '#',
+  //     label: 'Instagram'
+  //   },
+  //   {
+  //     icon: Dribbble,
+  //     link: '#',
+  //     label: 'Dribbble'
+  //   },
+  //   {
+  //     icon: Facebook,
+  //     link: '#',
+  //     label: 'Facebook'
+  //   }
+  // ];
 
   return (
     <section id="contact" className="bg-light">
@@ -102,7 +102,7 @@ const Contact = () => {
             </div>
 
             {/* Social Media Links */}
-            <div className="flex gap-4 pt-4">
+            {/* <div className="flex gap-4 pt-4">
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
                 return (
@@ -116,7 +116,7 @@ const Contact = () => {
                   </a>
                 );
               })}
-            </div>
+            </div> */}
           </div>
 
           {/* Right Side - Contact Form */}
@@ -130,7 +130,7 @@ const Contact = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First name"
-                  className="w-full px-4 py-3 text-sm bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-gray-400"
+                  className="w-full px-4 py-3 text-sm bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-gray-400"
                   required
                 />
               </div>
@@ -143,7 +143,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Email"
-                  className="w-full px-4 py-3 text-sm bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-gray-400"
+                  className="w-full px-4 py-3 text-sm bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-gray-400"
                   required
                 />
               </div>
@@ -156,7 +156,7 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Phone number"
-                  className="w-full px-4 py-3 text-sm bg-white border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-gray-400"
+                  className="w-full px-4 py-3 text-sm bg-white border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-gray-400"
                   required
                 />
               </div>
@@ -169,7 +169,7 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Your message"
                   rows="6"
-                  className="w-full px-4 py-3 text-sm bg-white border border-gray-200 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-gray-400"
+                  className="w-full px-4 py-3 text-sm bg-white border border-gray-200 resize-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent placeholder:text-gray-400"
                   required
                 />
               </div>
