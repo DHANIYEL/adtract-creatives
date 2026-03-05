@@ -2,20 +2,12 @@ import React from "react";
 import CustomButton from "../components/CustomButton";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import CardImg1 from "/src/assets/images/card1.png";
-import CardImg2 from "/src/assets/images/card2.png";
-import CardImg3 from "/src/assets/images/card3.png";
 
 const WeddingCardScreen = () => {
   const Navigate = useNavigate();
-  const cardImages = [
-    CardImg1,
-    CardImg2,
-    CardImg3,
-    CardImg1,
-    CardImg2,
-    CardImg3,
-  ];
+
+  // generate images from 1-11
+  const cardImages = Array.from({ length: 21 }, (_, i) => `/wedding-cards/${i + 1}.jpeg`);
 
   return (
     <section className="bg-tertiary ">
@@ -28,8 +20,10 @@ const WeddingCardScreen = () => {
           <span className="text-sm font-medium">Back</span>
         </button>
       </div>
+
       <div className="app-container section">
         <div className="space-y-12">
+
           {/* Header */}
           <div className="space-y-3 text-center">
             <h2 className="text-3xl font-bold text-secondary sm:text-4xl lg:text-5xl">
@@ -41,66 +35,28 @@ const WeddingCardScreen = () => {
           </div>
 
           {/* Card Grid */}
-          <div className="space-y-6">
-            {/* Row 1 */}
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-              {cardImages.map((image, index) => (
-                <div
-                  key={`row1-${index}`}
-                  className="overflow-hidden transition-all duration-300 bg-white rounded-lg shadow-sm group hover:shadow-lg"
-                >
-                  <div className="relative w-full overflow-hidden aspect-[3/4]">
-                    <img
-                      src={image}
-                      alt={`Wedding card design ${index + 1}`}
-                      className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
+          <div className="grid grid-cols-3 gap-4 sm:grid-cols-4 lg:grid-cols-5">
+            {cardImages.map((image, index) => (
+              <div
+                key={index}
+                className="overflow-hidden transition-all duration-300 bg-white rounded-lg shadow-sm group hover:shadow-lg"
+              >
+                <div className="relative w-full overflow-hidden aspect-[3/4]">
+                  <img
+                    src={image}
+                    alt={`Wedding card design ${index + 1}`}
+                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  />
                 </div>
-              ))}
-            </div>
-
-            {/* Row 2 */}
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-              {cardImages.map((image, index) => (
-                <div
-                  key={`row2-${index}`}
-                  className="overflow-hidden transition-all duration-300 bg-white rounded-lg shadow-sm group hover:shadow-lg"
-                >
-                  <div className="relative w-full overflow-hidden aspect-[3/4]">
-                    <img
-                      src={image}
-                      alt={`Wedding card design ${index + 7}`}
-                      className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Row 3 */}
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-              {cardImages.map((image, index) => (
-                <div
-                  key={`row3-${index}`}
-                  className="overflow-hidden transition-all duration-300 bg-white rounded-lg shadow-sm group hover:shadow-lg"
-                >
-                  <div className="relative w-full overflow-hidden aspect-[3/4]">
-                    <img
-                      src={image}
-                      alt={`Wedding card design ${index + 13}`}
-                      className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
           {/* See More Button */}
           <div className="pt-8 flex-center">
             <CustomButton variant="secondary">See More</CustomButton>
           </div>
+
         </div>
       </div>
     </section>
