@@ -1,7 +1,6 @@
-import React from "react";
+import { Dribbble, Facebook, Instagram, Twitter } from "lucide-react";
+import Logo from "../assets/logo/Adtract-logo.svg";
 import Contact from "../components/Contact";
-import { Instagram, Twitter, Dribbble, Facebook } from "lucide-react";
-import Logo from "/src/assets/logo/Adtract-logo.svg";
 const Footer = () => {
   const footerLinks = [
     { name: "About", href: "#about" },
