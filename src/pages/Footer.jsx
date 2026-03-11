@@ -43,11 +43,7 @@ const Footer = () => {
                 {/* Center Logo */}
                 <div className="flex justify-center">
                   <a href="/">
-                    <img
-                      src="/src/assets/logo/Adtract-logo.svg"
-                      alt="logo"
-                      className="w-24 h-24"
-                    />
+                    <img src={Logo} alt="logo" className="w-24 h-24" />
                   </a>
                 </div>
 
