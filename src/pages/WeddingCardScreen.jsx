@@ -288,7 +288,7 @@ const WeddingCardScreen = () => {
       .replace(".JPG", "");
 
     const phone = "917012882165";
-    const message = `Hi, I am interested in wedding card design ${trimmedName}`;
+    const message = `Hello, I'm interested in the ${trimmedName} wedding card design. Could you please share more details?`;
 
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
