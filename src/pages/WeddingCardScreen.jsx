@@ -394,9 +394,9 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
           border: 1.5px solid rgba(152,26,29,0.18);
           background: transparent;
           color: #981A1D;
-          font-family: 'Cormorant Garamond', Georgia, serif;
-          font-size: 15px;
-          font-weight: 600;
+          font-family: 'poppins', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
           cursor: pointer;
           transition: all 0.2s ease;
           letter-spacing: 0.5px;
@@ -501,13 +501,13 @@ const WeddingCardScreen = () => {
         }
 
         .wc-eyebrow {
-          font-size: 11px;
+          font-size: 14px;
           letter-spacing: 5px;
           text-transform: uppercase;
           color: #C24E51;
           margin-bottom: 16px;
           font-family: 'Cormorant Garamond', serif;
-          font-weight: 400;
+          font-weight: 700;
         }
 
         .wc-title {
@@ -596,7 +596,7 @@ const WeddingCardScreen = () => {
           color: #7a2e30;
           letter-spacing: 2px;
           text-transform: uppercase;
-          font-family: 'Cormorant Garamond', serif;
+          font-family: 'poppins', sans-serif;
         }
       `}</style>
 
@@ -626,24 +626,24 @@ const WeddingCardScreen = () => {
           Wedding Card
         </h1>
         <p className="wc-subtitle">
-          Browse {TOTAL} handpicked designs. Pick the vibe you love.
+          Discover invitations that beautifully begin your love story.
         </p>
-        <div className="wc-divider">
+        {/* <div className="wc-divider">
           <div className="wc-divider-line" />
           <span style={{ fontSize: 18 }}>♡</span>
           <div className="wc-divider-line right" />
-        </div>
+        </div> */}
       </div>
 
-      <div
+      {/* <div
         style={{ display: "flex", justifyContent: "center", marginBottom: 32 }}
       >
         <div className="wc-counter">
           <span>✦</span>
-          <span>{TOTAL} Designs Available</span>
+          <span>Find the perfect invitation for your special day</span>
           <span>✦</span>
         </div>
-      </div>
+      </div> */}
 
       <div className="wc-grid">
         {displayed.map((image, i) => (
@@ -656,7 +656,7 @@ const WeddingCardScreen = () => {
         ))}
       </div>
 
-      <div className="wc-footer">
+      <div className="!font-sans wc-footer">
         <Pagination
           currentPage={currentPage}
           totalPages={TOTAL_PAGES}
