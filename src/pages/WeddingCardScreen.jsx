@@ -1,4 +1,4 @@
-import { ArrowLeft, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -601,10 +601,10 @@ const WeddingCardScreen = () => {
       `}</style>
 
       <div className="wc-header-bar">
-        <button onClick={() => Navigate(-1)} className="back-btn">
+        {/* <button onClick={() => Navigate(-1)} className="back-btn">
           <ArrowLeft size={16} />
           Back
-        </button>
+        </button> */}
         <div style={{ flex: 1 }} />
         <span
           style={{
