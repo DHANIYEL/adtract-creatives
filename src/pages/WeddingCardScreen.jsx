@@ -141,8 +141,8 @@ const PreviewModal = ({ image, index, onClose }) => {
   const imageUrl = `http://adtractcreative.com/wedding-cards/${cardCode}.JPG`;
 
   const handleWhatsApp = async () => {
-    // const phone = "919072501981"; // Adtract
-    const phone = "917012882165"; // My Number
+    const phone = "919072501981"; // Adtract
+    // const phone = "917012882165"; // My Number
     const message =
       `Hello! I'm interested in the *${cardCode}* wedding card design.\n\n` +
       `Card: ${cardCode}\n` +
