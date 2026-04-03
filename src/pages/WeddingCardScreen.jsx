@@ -428,7 +428,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 const WeddingCardScreen = () => {
   const Navigate = useNavigate();
   const PER_PAGE = 20;
-  const TOTAL = 165;
+  const TOTAL = 321;
   const TOTAL_PAGES = Math.ceil(TOTAL / PER_PAGE);
 
   const [currentPage, setCurrentPage] = useState(1);
